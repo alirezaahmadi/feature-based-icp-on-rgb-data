@@ -1,3 +1,10 @@
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Pointcloud Registration C++/ROS Kinect 360-featured base%
+% by: Alireza Ahmadi                                     %
+% University of Bonn- MSc Robotics & Geodetic Engineering%
+% Alireza.Ahmadi@uni-bonn.de                             %
+% AhmadiAlireza.webs.com                                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 #include <ros/ros.h>
 #include "map_recon_nodehandler.h"
 #include "map_recon.h"
