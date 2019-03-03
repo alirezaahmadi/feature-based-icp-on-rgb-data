@@ -1,0 +1,69 @@
+#-------------------------------------------------------
+#-------------------Setting Variables-------------------
+# the numbers of msgs->to reject from the begining of the bag file
+frame_num_offset: 0
+# Total limit of farames to Process from Bag file
+frame_num: 50
+# FrameNum marker for Database
+run_frame_num: 0
+# Apply fisrt initial Transformation -> 0: No initialization, 1: input tranfomation, 2: Tf based
+Initial_Transformation: 0
+# 0: Random/Pater-NNS, 1: FeatureBased (SIFT-SURF-ORB)
+CorPointSamMode: 0 
+#-------------------------------------------------------
+#-------------------Down Samplng------------------------
+# 0: Random, 1: PaternBased
+DownSampling_mode: 0
+# Ratio of DownSampling 
+DownSampling_scale: 0.05
+#-------------------------------------------------------
+#-------------------Nearest Neighbor--------------------
+# Stop Iterations in ICP (*NN) 
+Registration_accuracy_NNS: 0.000001
+# Number of Points in Random Corresponding Generation  
+CorPoints_num: 100
+# MaxDistance to take a point as Nearest Neighbour 
+MaxDist_NN: 0.1
+# method to find NN for points -> 0: NN mine, 1: NN-FLANN search OpenCV
+NN_SearchType: 0
+#-------------------------------------------------------
+#----------------FeatureBased Matcher------------------- 
+# Maxixmum Error to register a PCL
+Registration_accuracy_FB: 4
+## Minimum Corresponding points to register PCL
+minCorPoints: 10
+# 0: SIFT, 1: SURF, 2: ORB 
+FeatureType: 0
+# 0: FLANN, 1: BruteForce
+MatcherType: 0
+# multiplier to minDist of Feature Matcher 
+Mul_minDistFM: 3.0
+# divergance from minDis between matches 
+Epsilon_minDistFM: 0.01
+#-------------------------------------------------------
+#------------------Debugg FLAGs-------------------------
+# Show Comments
+DebuggLogShow: true
+# Show Feature Extractor result
+Feature2DShow: false
+# Show Matches for to recent Images
+MatcherShow: false
+# Show ICP Iteration results
+ICPIterationShow: false
+#-------------------------------------------------------
+#-----------------Sensor Specifications-----------------
+# Sensor maximum depth range (in meters)
+minDepthRange: 0.03
+# Sensor maximum depth range (in meters)
+maxDepthRange: 6.0
+#-------------------------------------------------------
+#-------------PCL flter Setting Variables---------------
+# Low range limit for filtring the PCL (based on depth image) (in meters)
+Lowrange_limit: 0.03
+# HIgh range limit for filtring the PCL (based on depth image) (in meters)
+Highrange_limit: 6.0
+#-------------------------------------------------------
+#--------------Map frames/TF Settings-------------------
+Publish_TF: true
+frame_id: world
+child_frame_id: sensor

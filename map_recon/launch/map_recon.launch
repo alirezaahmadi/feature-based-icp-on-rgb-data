@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<launch>
+
+  <node type="rviz" name="rviz" pkg="rviz" />
+
+  <node pkg="rosbag" type="play" name="player" args=" -r 1 /home/alireza/Desktop/rgbd_dataset_freiburg1_xyz.orig.bag"/>
+
+
+  <!-- Launch ROS Node for map_recon_node-->
+  <node pkg="map_recon" type="map_recon_node" name="map_recon_node" output="screen" >
+    <rosparam command="load" file="$(find map_recon)/config/map_recon.yaml"/>
+    <rosparam command="load" file="$(find map_recon)/config/run.yaml"/>
+  </node>
+
+</launch>
+

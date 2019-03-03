@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>map_recon</name>
+  <version>0.1.0</version>
+  <description>3D map reconstruction - kinect </description>
+  <maintainer email="alireza.ahmadi@uni-bonn.de">Alireza Ahmadi</maintainer>
+  <license>BSD</license>
+  <author email="alireza.ahmadi@uni-bonn.de">Alireza Ahmadi</author>
+  
+  <buildtool_depend>catkin</buildtool_depend>
+  
+  <depend>roscpp</depend>
+  <depend>message_filters</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>tf_conversions</depend>
+
+</package>

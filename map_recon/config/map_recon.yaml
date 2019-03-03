@@ -1,0 +1,5 @@
+rgb_image_SubscriberTopic: /camera/depth/image
+depth_image_SubscriberTopic: /camera/rgb/image_color
+pcl_PublisherTopic: /kinect_pcl
+map_PublisherTopic: /kinect_map
+depthImage_PublisherTopic: /depth_image
