@@ -6,14 +6,14 @@ The results of our study on how depth and RGB images from a RGB-D sensor can be 
 Minimizing the distance between two point clouds which can be interpreted as tracking the position of camera or in addition if it integrate each scan into a map representation, goal would be 3D reconstruction of environment which is SLAM.
 
 <div align="center">
-	<img src="/images/1.png"  width="150"/>
+	<img src="/images/1.png"  width="400"/>
 </div>
 
 ## Main Pipe-Line
 The aim of this section is to explain general idea about how and in which steps the registration of point clouds and 3D reconstruction of the environments in real-time could be done. The registration algorithm includes different parts which shortly can be named as, finding correspondences, noise removal, rejection of wrong correspondences and finding translation and rotation parameters or the alignment. This process can be called as optimization or searching for alignment parameters which could be addressed with different methods like linear or non-linear least square optimizations through Iterative Closest Point (ICP).
 
 <div align="center">
-	<img src="/images/graph.png"  width="400"/>
+	<img src="/images/graph.png"  width="800"/>
 </div>
 
 ### DownSampling
